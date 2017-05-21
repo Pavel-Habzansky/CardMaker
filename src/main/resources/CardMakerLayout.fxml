@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<HBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.openmatics.cardmaker.controllers.MainController">
+   <children>
+   
+       <HBox fx:id="hBoxLeft" alignment="CENTER" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox fx:id="leftLabelVBox" prefHeight="426.0" prefWidth="113.0">
+               <children>
+                   <Label fx:id="nameLabel" text="%main.name">
+                     <VBox.margin>
+                        <Insets top="55.0" />
+                     </VBox.margin>
+                  </Label>
+                   <Label fx:id="positionLabel" text="%main.position">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                   <Label fx:id="addressLabel" text="%main.address">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleSaveButtonAction" text="%main.saveButton">
+                     <VBox.margin>
+                        <Insets top="200.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+
+            <VBox fx:id="leftFieldVBox" prefHeight="200.0" prefWidth="100.0">
+   <children>
+                   <TextField fx:id="nameField" promptText="%main.name">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </TextField>
+                   <TextField fx:id="positionField" promptText="%main.position">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                   <TextField fx:id="addressField" promptText="%main.address">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+   </children>
+            </VBox>
+         </children>
+   
+       </HBox>
+   
+       <Separator orientation="VERTICAL" />
+   
+       <VBox fx:id="hBoxRight" HBox.hgrow="ALWAYS">
+           <children>
+            <ScrollPane fx:id="scrollPane" maxHeight="-Infinity" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="cardBox">
+
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+       </VBox>
+   </children>
+
+    <!--<stylesheets>-->
+        <!--<URL value="@styles.css" />-->
+    <!--</stylesheets>-->
+</HBox>

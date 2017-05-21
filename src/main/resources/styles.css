@@ -1,0 +1,48 @@
+#hBoxLeft{
+    -fx-padding: 10;
+}
+#topCardRight{
+    -fx-padding: 10;
+}
+#topCardLeft{
+    -fx-padding: 10;
+    -fx-font-size: 12px;
+}
+
+#nameLabelBox{
+    -fx-padding: 10 0 0 10;
+    -fx-min-height: 65;
+}
+#positionLabelBox{
+    -fx-padding: 10 0 0 10;
+}
+#websiteLabelBox{
+    -fx-pref-height: 150;
+    -fx-padding: 10 0 0 10;
+}
+#imageBox{
+    -fx-padding: 10 0 0 10;
+}
+#openmaticsLabelBox{
+    -fx-padding: 10 0 0 10;
+    -fx-min-height: 50;
+}
+#secLabelBox{
+    -fx-padding: 10 0 0 10;
+}
+#thirdLabelBox{
+    -fx-padding: 10 0 0 10;
+    -fx-font-size: 12px;
+}
+#mailBox{
+    -fx-padding: 10 0 0 10;
+}
+#openmaticsSRO{
+    -fx-font-family: "Arial Black";
+}
+#openmaticsLabel{
+    -fx-font-size: 14px;
+    -fx-text-fill: gray;
+    -fx-font: 20px Arial;
+    -fx-font-weight: bold;
+}

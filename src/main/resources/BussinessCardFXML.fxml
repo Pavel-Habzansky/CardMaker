@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+
+<HBox fx:id="topCard" prefHeight="225" prefWidth="390" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.openmatics.cardmaker.controllers.CardController">
+
+<children>
+    <VBox fx:id="topCardLeft" prefWidth="185">
+       <children>
+   
+           <HBox fx:id="imageBox" alignment="TOP_LEFT">
+      <children>
+                  <ImageView fx:id="logoView" fitHeight="35" fitWidth="35">
+                     <image>
+                         <Image url="images/zf_logo.jpg" />
+                     </image>
+                  </ImageView>
+      </children>
+           </HBox>
+           <HBox fx:id="nameLabelBox" alignment="TOP_LEFT">
+              <children>
+                  <Label fx:id="nameLabel" />
+              </children>
+           </HBox>
+           <HBox fx:id="positionLabelBox" alignment="TOP_LEFT">
+              <children>
+                  <Label fx:id="positionLabel" />
+              </children>
+           </HBox>
+           <HBox fx:id="websiteLabelBox" alignment="BOTTOM_LEFT">
+              <children>
+                  <Label fx:id="websiteLabel" text="www.openmatics.com" />
+              </children>
+           </HBox>
+       </children>
+    </VBox>
+
+    <VBox fx:id="topCardRight">
+   <children>
+   
+           <VBox fx:id="openmaticsLabelBox" alignment="BOTTOM_LEFT">
+      <children>
+                  <Label fx:id="openmaticsLabel" text="Openmatics" />
+      </children>
+           </VBox>
+           <VBox fx:id="secLabelBox" alignment="TOP_LEFT">
+              <children>
+                  <Label fx:id="openmaticsSRO" text="Openmatics s.r.o." />
+                  <Label fx:id="addressLabel"/>
+                  <Label fx:id="cityLabel"  text="%card.cityLabel"/>
+              </children>
+           </VBox>
+           <VBox fx:id="thirdLabelBox" alignment="TOP_LEFT">
+              <children>
+                  <Label fx:id="cardCountryLabel" text="%card.countryLabel" />
+                  <Label text="VAT ID" />
+                  <Label fx:id="phoneLabel" />
+                  <Label fx:id="faxLabel" />
+              </children>
+           </VBox>
+           <VBox fx:id="mailBox" alignment="BOTTOM_LEFT">
+              <children>
+                  <Label fx:id="mailLabel" />
+              </children>
+           </VBox>
+   </children>
+
+    </VBox>
+</children>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+</HBox>
